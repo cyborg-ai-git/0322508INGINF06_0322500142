@@ -1,0 +1,30 @@
+{
+  "snapshot_date": "2026-09-16",
+  "hash_verification_utc": "2026-09-16T00:34:01.909558+00:00",
+  "sources": [
+    {
+      "file": "GSE32863_non-normalized.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE32nnn/GSE32863/suppl/GSE32863_non-normalized.txt.gz",
+      "bytes": 36525792,
+      "sha256": "46799d6d10b1fcdf8c934a333f927c7901488597fed3c1059fa5b3cfbffedb89"
+    },
+    {
+      "file": "GSE32863_series_matrix.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE32nnn/GSE32863/matrix/GSE32863_series_matrix.txt.gz",
+      "bytes": 29776898,
+      "sha256": "7f33b83dc8d2b0876e610a265f947893753b2a70854d360c247311fa3474f63f"
+    },
+    {
+      "file": "Homo_sapiens.gene_info.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz",
+      "bytes": 5188195,
+      "sha256": "3096b7d8fe1082b61b7f7950bedf6a4b2ebb2437351fdb68394675d20608e465"
+    },
+    {
+      "file": "GPL6884_platform.soft",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL6nnn/GPL6884/soft/GPL6884_family.soft.gz",
+      "bytes": 26576761,
+      "sha256": "3b400e2a038637bb8e4af6218614ad0003d048b0ddfebe9d751f63846e8578f6"
+    }
+  ]
+}

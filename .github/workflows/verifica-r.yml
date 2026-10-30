@@ -1,0 +1,52 @@
+name: Verifica R su Windows e macOS
+
+on:
+  workflow_dispatch:
+    inputs:
+      sistema:
+        description: Sistema su cui eseguire la verifica completa
+        required: true
+        default: windows-latest
+        type: choice
+        options:
+          - windows-latest
+          - macos-latest
+
+permissions:
+  contents: read
+
+jobs:
+  analisi:
+    name: Analisi completa (${{ inputs.sistema }})
+    runs-on: ${{ inputs.sistema }}
+    timeout-minutes: 25
+    steps:
+      - name: Scarica il progetto
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Installa R
+        uses: r-lib/actions/setup-r@f9a764fea8d5c63df6ef9a5c7795bf7deb5d7e05 # v2
+        with:
+          r-version: release
+          use-public-rspm: false
+      - name: Scarica i dati ed esegue analisi e controlli in R
+        shell: Rscript {0}
+        run: |
+          local({
+            stopifnot(!dir.exists("data"), !dir.exists("risultati"))
+            assign("variabile_precedente", 1, envir = .GlobalEnv)
+            assign(".variabile_nascosta", 2, envir = .GlobalEnv)
+            pdf(tempfile(fileext = ".pdf"))
+            plot(1)
+            pdf(tempfile(fileext = ".pdf"))
+            plot(2)
+            source("src/00_mainelaborato.R", encoding = "UTF-8")
+            # I grafici possono creare un nuovo .Random.seed durante l'analisi.
+            stopifnot(!any(c("variabile_precedente", ".variabile_nascosta",
+              "esegui_elaborato") %in% ls(envir = .GlobalEnv, all.names = TRUE)),
+              is.null(dev.list()), !file.exists("Rplots.pdf"))
+            source("tests/verifica_risultati.R", local = new.env(),
+              encoding = "UTF-8")
+            print(sessionInfo())
+          })

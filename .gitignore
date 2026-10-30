@@ -1,0 +1,33 @@
+# Input scaricati, output rigenerabili e pacchetti locali.
+/data/
+/risultati/
+/figure/
+/.R-library/
+/manifest_risultati_sha256.txt
+
+# Stato personale R/RStudio e segreti locali.
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.Renviron.*
+.env
+.env.*
+
+# File del sistema operativo e temporanei.
+.DS_Store
+._*
+Thumbs.db
+Rplots.pdf
+*.log
+*.part
+*~
+
+# I documenti finali rimangono nella cartella ELABORATO_FINAL.
+/*.docx
+/*.pdf
+/*.pages
+
+# Utilita personale preesistente per creare il repository.
+/run_github_repository.sh

@@ -1,0 +1,53 @@
+{
+  "snapshot_date": "2026-09-16",
+  "files": [
+    {
+      "file": "background_geni_testati.txt",
+      "sha256": "be0dfe06f8189e2f9e6c7b42f5450dee9517241f383bba2494d936151230219b"
+    },
+    {
+      "file": "geni_DEG_per_Enrichr.txt",
+      "sha256": "df62ba928f6af8f25931b0e55e0aa144b8fcda5f15ed48038d2daf7ae322e642"
+    },
+    {
+      "file": "geni_up.txt",
+      "sha256": "8409dee57c87c29d08a8638165413aca6dd84af099224ef30a2bdc8c1dd8a28f"
+    },
+    {
+      "file": "geni_down.txt",
+      "sha256": "0a74045280f70abe1f7664c56656871625c39fffb09914e5daea3f2be14155f1"
+    },
+    {
+      "file": "../data/Enrichr/down_GO_Biological_Process_2025.json",
+      "sha256": "9ff17eae0b37586a26d64e4d266cd0f40e2cf7119eba29f9b244d860cf0d0565"
+    },
+    {
+      "file": "../data/Enrichr/down_KEGG_2021_Human.json",
+      "sha256": "f345624f7f3bfb11d6235c1d6173b78e79fe76874a12cfed2f525ea5d94d3f3a"
+    },
+    {
+      "file": "../data/Enrichr/tutti_GO_Biological_Process_2025.json",
+      "sha256": "5f5f8d2048ff67ed5597ad7e049b5373cd82945f0c33e98f53e45a15c7e7bdf2"
+    },
+    {
+      "file": "../data/Enrichr/tutti_KEGG_2021_Human.json",
+      "sha256": "8454761a791ab7390cf4f37c6d2b4a89c4f5c28a3b3dcaa6b946203b38ce6270"
+    },
+    {
+      "file": "../data/Enrichr/up_GO_Biological_Process_2025.json",
+      "sha256": "6141737c2a8aa4047bc284c0f4c65c12acd8076bb88d4e1fa1b7bbd48dacddac"
+    },
+    {
+      "file": "../data/Enrichr/up_KEGG_2021_Human.json",
+      "sha256": "821b0a8de49e193214e3b3b3f439634b0ea5bac8b902f430cf9c3b7b017c85e0"
+    },
+    {
+      "file": "../data/GO_Biological_Process_2025.gmt",
+      "sha256": "0fc02458765cfce6c9348dce9f7a9397c6caf7c09ba318f468135d7ac60342ee"
+    },
+    {
+      "file": "../data/KEGG_2021_Human.gmt",
+      "sha256": "566763b3402ee1f06612cc48b57e2a0f3f92a9a9e7d1871cc2da9f940e2d609a"
+    }
+  ]
+}
